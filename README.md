@@ -323,8 +323,6 @@ except HttpServerError:
 
 ### Deviation 2: json is not allowed as a keyword argument
 
-
-
 `requests` allows you to write this:
 
 ```
@@ -508,3 +506,9 @@ An **error event** occurs when some other exception gets raised (or, for whateve
 Because of the expectation that failure events indicate faults in the checks and error events indicate faults in the system under test, the **Event Logger** reports failure events as warnings and error events as errors.  The warning indicates that the check did its job perfectly and the fault was somewhere else.  The error indicates that the fault is in the check.  Of course, real life is not so clean.
 
 Because the distinction originated from the JUnit world, **Junit XML Reporter** has no need to perform any interpretation.  It reports failure events as failures and error events as errors.
+
+### How to setup Questions Three local development environment
+
+There are different ways of setting up a Questions Three development environment, bellow you can check a few documented examples:
+- [Poetry](docs/poetry.md)
+- ...
