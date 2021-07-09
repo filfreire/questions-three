@@ -8,3 +8,4 @@ twin-sister>=4.2.6.0  # required by unit tests
 twine>=1.9.1  # required by setup to upload package to Nexus
 wheel>=0.30.0  # required by setup to build package
 parameterized>=0.7.0  # required by unit tests
+termcolor>=1.1.0  # required by ColorEventLogger
