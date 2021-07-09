@@ -18,7 +18,7 @@ delay_between_checks_for_parallel_suite_completion: 3
 # For each class enumerated here, scaffolds will create an instance,
 #  discover its event handler methods, and subscribe each handler to
 #  the appropriate event.
-event_reporters: ArtifactSaver,EventLogger,JunitReporter,ResultCompiler
+event_reporters: ArtifactSaver,ColorEventLogger,JunitReporter,ResultCompiler
 
 # Proxy URLs for the HTTP Client
 http_proxy: null
