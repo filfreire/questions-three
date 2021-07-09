@@ -7,11 +7,12 @@ from questions_three.exceptions import InvalidConfiguration
 from questions_three.module_cfg import config_for_module
 from questions_three.reporters.artifact_saver import ArtifactSaver
 from questions_three.reporters.event_logger import EventLogger
+from questions_three.reporters.event_logger import ColorEventLogger
 from questions_three.reporters.junit_reporter import JunitReporter
 from questions_three.reporters.result_compiler import ResultCompiler
 
 
-BUILT_IN_REPORTERS = (ArtifactSaver, EventLogger, JunitReporter, ResultCompiler)
+BUILT_IN_REPORTERS = (ArtifactSaver, EventLogger, ColorEventLogger, JunitReporter, ResultCompiler)
 
 _active_reporters = []
 

@@ -37,8 +37,8 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    author="Mike Duskis",
-    author_email="mike.duskis@cybergrx.com",
+    author="Filipe Freire",
+    author_email="livrofubia@gmail.com",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
@@ -49,16 +49,16 @@ setup(
         "Topic :: Software Development :: Testing",
     ],
     cmdclass={"test": Tester},
-    description="Toolkit for building automated integration checks",
+    description="Toolkit for building automated integration checks, fork of CyberGRX/questions-three originally created by Mike Duskis (mike.duskis@cybergrx.com)",
     install_requires=requirements("requirements.txt"),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    name="questions-three",
+    name="questions-three-filfreire",
     package_data={
         "questions_three": ["module_cfg.yml"],
         "questions_three.webdriver_tools.dom_dumper": ["dump_dom.js"],
     },
     packages=find_packages(exclude=("tests.*", "tests")),
-    url="https://github.com/CyberGRX/questions-three",
+    url="https://github.com/filfreire/questions-three",
     version="%d.%d.%d.%d" % (MAJOR_VERSION, MINOR_VERSION, PATCH_VERSION, build_number()),
 )

@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "questions-three"
+version = "0.1.0"
+description = ""
+authors = ["Filipe Freire <livrofubia@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+junit-xml = "^1.8"
+expects = "^0.9.0"
+lxml = "^4.6.3"
+PyYAML = "^5.4.1"
+pyfakefs = "^4.5.0"
+requests = "^2.25.1"
+twin-sister = "^4.7.3"
+twine = "^3.4.1"
+wheel = "^0.36.2"
+parameterized = "^0.8.1"
+termcolor = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
