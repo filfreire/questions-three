@@ -7,3 +7,6 @@ debug:
 
 debug2:
 	event_reporters=ArtifactSaver,JunitReporter,ResultCompiler CUSTOM_REPORTERS_FILE=custom_reporters poetry run python examples/test_script.py
+
+lint:
+	poetry run black --config black.toml .

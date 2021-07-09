@@ -20,7 +20,7 @@ class ColorEventLogger:
         self._log.info('Suite "%s" ended' % suite_name)
 
     def on_suite_erred(self, exception=None, **kwargs):
-        self._log.error(colored(format_exception(exception),"red"))
+        self._log.error(colored(format_exception(exception), "red"))
 
     def on_suite_started(self, suite_name, **kwargs):
         self._log.info('Suite "%s" started' % suite_name)
@@ -29,13 +29,13 @@ class ColorEventLogger:
         self._log.info('Check "%s" ended' % test_name)
 
     def on_test_erred(self, exception, **kwargs):
-        self._log.error(colored(format_exception(exception),"red"))
+        self._log.error(colored(format_exception(exception), "red"))
 
     def on_test_failed(self, test_name, exception, **kwargs):
-        self._log.warning(colored('Check "%s" failed: %s' % (test_name, exception),"red"))
+        self._log.warning(colored('Check "%s" failed: %s' % (test_name, exception), "red"))
 
     def on_test_skipped(self, test_name, exception, **kwargs):
-        self._log.warning(colored('Check "%s" skipped: %s' % (test_name, exception),"yellow"))
+        self._log.warning(colored('Check "%s" skipped: %s' % (test_name, exception), "yellow"))
 
     def on_test_started(self, test_name, **kwargs):
         self._log.info('Check "%s" started' % test_name)
